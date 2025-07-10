@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="Table.html">Table page</a>
+        </li>
+        <li>
+            <a href="trial.html">Trial page</a>
+        </li>
+        <li>
+            <a href="Form.html">Form page</a>
+        </li>
+        <li>
+            <a href="Assignment form.html">Form page 2</a>
+        </li>
+        <li>
+            <a href="Assignment.html">Form page 3</a>
+        </li>
+        <li>
+            <a href="Assignment table.html">Form page</a>
+        </li>
+    
+    </ul>
+    <!-- HTML forms tags -->
+    <!-- 
+    
+     <form></form>
+     <fieldset></fieldset>
+     <legend></legend>
+     <label for=""></label>
+     <input type="text">
+     <select name="" id=""></select>
+     <option value=""></option>
+     <textarea></textarea>
+     <button></button> 
+     
+     -->
+
+    <!-- Input types -->
+    <!-- 
+        -text -default type
+        -numbers
+        -email
+        -password
+        -checkbox
+        -radio
+        -file
+        -date
+        -time
+        -datetime
+        -submit
+        -datetime -local
+
+        EXTRAS
+        -color
+        -range
+        -tel
+        -url
+        -month
+        -week
+        -reset
+        -search
+        -image
+        -hidden
+
+      -->
+
+
+    <!-- Attributes for form elemrnt/tags -->
+    <!-- 
+        name
+        id
+        placeholder
+        required
+        readonly
+        max
+        min
+        minlength
+         -->
+
+
+
+    <form>
+        <fieldset>
+            <legend>Personal information</legend>
+
+
+            <label for="Firstname">
+                Firstname
+            </label>
+            <input type="text" id="Firstname" name="Firstname" required placeholder="Enter your name" value="gideon"
+            readonly><br><br>
+
+            <label for="Phonenumber">
+                Phonenumber
+            </label>
+            <input type="number" name="Phonenumber" id="Phonenumber" required><br><br>
+
+            <label for="emailaddress">
+                Email Address
+            </label>
+            <input type="email" name="emailaddress" id="emailaddress" required><br><br>
+
+            <label for="dateofbirth">
+                Date of birth
+            </label>
+            <input type="date" name="dateofbirth" id="dateofbirth"><br><br>
+
+            <label for="worktime">
+                Preferred work time
+            </label>
+            <input type="time" name="worktime" id="worktime"><br><br>
+
+            <label for="profilepicture">
+                Upload profile picture
+            </label>
+            <input type="file" name="profilepicture" id="profilepicture" multiple><br><br>
+
+            <label>
+                Choose your profession
+            </label><br>
+            <input type="radio" name="profession" id="Doctor"><label for="Doctor">Doctor</label><br><br>
+            <input type="radio" name="profession" id="Lawyer"><label for="Lawyer">Lawyer</label><br><br>
+            <input type="radio" name="profession" id="Engineer"><label for="Engineer">Engineer</label><br><br>
+
+            <label>
+                Choose your hobbies
+            </label><br>
+            <input type="checkbox" name="hobbies" id="singing"><label for="singing">singing</label><br><br>
+            <input type="checkbox" name="hobbies" id="dancing"><label for="dancing">dancing</label><br><br>
+            <input type="checkbox" name="hobbies" id="cooking"><label for="cooking">cooking</label><br><br>
+
+            <label for="country">
+                Select your country
+            </label>
+            <select name="country" id="counttry">
+                <option value="">----choose----</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Algeria">Algeria</option>
+                <option value="Canada">Canada</option>
+            </select><br><br>
+
+            <label for="bio">
+                Describe yourself 
+            </label><br>
+            <textarea name="bio" id="bio" cols="40" rows="10" maxlength="20"></textarea><br><br>
+
+
+
+            <label for="Password">
+                Password
+            </label>
+            <input type="password" name="Password" id="Password"><br><br>
+
+            <button type="submit">
+                Login
+            </button>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
